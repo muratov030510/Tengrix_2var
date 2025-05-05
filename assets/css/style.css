@@ -1,0 +1,255 @@
+.container, .container1, .container2 {
+    margin: 0 auto; /* Центрируем */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 1366px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+.header-line{
+    position: relative; /* Поднимаем контент над видео */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    
+
+}
+.header {
+    position: relative; /* Добавляем, чтобы видео позиционировалось относительно */
+    height: 100vh;
+    overflow: hidden;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.vertical-line {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 250px; /* Подстроить отступ после логотипа */
+    width: 3px; /* Толщина линии */
+    background-color: rgba(255, 255, 255, 0.5); /* Белый с прозрачностью */
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.search {
+    display: flex;
+    flex: 1; /* Занимает всю доступную ширину слева */
+    max-width: 300px;
+    padding-left: 50px;
+    gap: 20px;
+
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Пространство между элементами */
+
+}
+.consult-btn {
+    background-color: #fff;
+    color: rgba(44, 98, 166, 1);
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 60px;
+}
+.languages{
+    display: flex;  
+}
+.languages {
+    color: white; /* Сделает также "/" белым */
+    font-size: 16px; /* Размер шрифта */
+}
+.languages a {
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold; /* Делаем жирным (по желанию) */
+}
+.phone{
+    display: flex;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Раздвигаем блоки в стороны */
+    align-items: center;
+    width: 100%;
+}
+
+.nav-left {
+    display: flex;
+    gap: 10px; /* Отступы между пунктами */
+    padding-left: 40px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px; /* Отступы между соц. иконками */
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.main1-text{
+    display: flex;
+    color:#fff ;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+.scroll{
+    writing-mode: vertical-rl; /* Поворот текста на 90° */
+    text-orientation: mixed; /* Буквы не переворачиваются */
+    white-space: nowrap; /* Текст не переносится */
+    font-size: 15px;
+    color:#fff ;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.mission * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.text2{
+    font-size: 70px;
+}
+.text3{
+    font-size: 30px;
+}
+.consult-btn2 {
+    background-color: #fff;
+    color: rgba(44, 98, 166, 1);
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 60px;
+    margin-top: 10px;
+    width: 240px;
+    text-align: center;
+}
+.contact-us {
+    position: fixed; /* Фиксируем на экране */
+    bottom: 20px; /* Отступ от нижнего края */
+    right: 20px; /* Отступ от правого края */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Отступ между иконками */
+}
+
+.contact-us img {
+    width: 155px; /* Размер иконок */
+    height: auto;
+    cursor: pointer; /* Сделает их кликабельными */
+}
+
+.tengrix_numbers{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-top: 40px;
+}
+.topic1{
+    color: #b0a1a1;
+    font-size: 30px;
+    padding-left: 40px;
+}
+.facts1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+hr {
+    border: none;
+    height: 2px; /* Толщина */
+    background-color: #ccc; /* Цвет */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.facts2 *{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(44, 98, 166, 1);
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1366px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top *{
+    padding: 10px;
+}
+.contact-info{
+    max-width: 250px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    
+}
+.legal-links{
+    display: flex;
+    flex-direction: column;
+}
+.consult-btn3 a{
+    background-color: #fff;
+    color: rgba(44, 98, 166, 1);
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 60px;
+}
