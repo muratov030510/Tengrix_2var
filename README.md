@@ -31,4 +31,4 @@
 1. Склонируйте репозиторий:
    ```bash
    git clone https://github.com/muratov030510/Tengrix_2var.git
-   cd tengrix
+   cd Tengrix_2var
